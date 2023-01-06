@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Public Sans", sans-serif;
+  @apply text-[18px];
+}
+
+.navLinks {
+  &:hover {
+    .navHoverBars {
+      background: linear-gradient(
+        to right,
+        hsl(136, 65%, 51%),
+        hsl(192, 70%, 51%)
+      );
+    }
+  }
+}
