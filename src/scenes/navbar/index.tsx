@@ -26,19 +26,17 @@ const Navbar = ({ selectPage, setSelectedPage }: Props) => {
         {isAboveMediaScreens && (
           <div className="relative ">
             <ul className="relative flex items-center justify-center gap-8">
-              {["home", "about", "contact", "blog", "careers"].map(
-                (items: string) => (
-                  <Links
-                    setIsMenuToggled={setIsMenuToggled}
-                    isMenuToggled={isMenuToggled}
-                    isAboveMediaScreens={isAboveMediaScreens}
-                    selectPage={selectPage}
-                    setSelectedPage={setSelectedPage}
-                    items={items}
-                    key={items}
-                  />
-                )
-              )}
+              {["home", "about", "blog", "careers"].map((items: string) => (
+                <Links
+                  setIsMenuToggled={setIsMenuToggled}
+                  isMenuToggled={isMenuToggled}
+                  isAboveMediaScreens={isAboveMediaScreens}
+                  selectPage={selectPage}
+                  setSelectedPage={setSelectedPage}
+                  items={items}
+                  key={items}
+                />
+              ))}
             </ul>
           </div>
         )}
@@ -70,19 +68,17 @@ const Navbar = ({ selectPage, setSelectedPage }: Props) => {
         <div className=" fixed top-20 left-0 right-0 bottom-0   bg-slate-600 bg-opacity-80   ">
           <div className=" mx-auto mt-5 w-5/6  rounded-md bg-white p-6 ">
             <ul className="relative flex flex-col items-center justify-center gap-8">
-              {["home", "about", "contact", "blog", "careers"].map(
-                (items: string) => (
-                  <Links
-                    setIsMenuToggled={setIsMenuToggled}
-                    isMenuToggled={isMenuToggled}
-                    isAboveMediaScreens={isAboveMediaScreens}
-                    selectPage={selectPage}
-                    setSelectedPage={setSelectedPage}
-                    items={items}
-                    key={items}
-                  />
-                )
-              )}
+              {["home", "about", "blog", "careers"].map((items: string) => (
+                <Links
+                  setIsMenuToggled={setIsMenuToggled}
+                  isMenuToggled={isMenuToggled}
+                  isAboveMediaScreens={isAboveMediaScreens}
+                  selectPage={selectPage}
+                  setSelectedPage={setSelectedPage}
+                  items={items}
+                  key={items}
+                />
+              ))}
             </ul>
           </div>
         </div>

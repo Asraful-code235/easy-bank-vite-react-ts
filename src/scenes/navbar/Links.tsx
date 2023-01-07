@@ -23,7 +23,6 @@ const Links = ({
 
   return (
     <AnchorLink
-      id={SelectedPage.Home}
       href={`#${tolowerCaseItem}`}
       onClick={() => setSelectedPage(tolowerCaseItem)}
       className={`${

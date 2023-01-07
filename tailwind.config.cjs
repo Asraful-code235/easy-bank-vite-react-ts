@@ -23,11 +23,11 @@ module.exports = {
         1320: "141%",
         50: "100%",
       },
-    },
-    screens: {
-      xs: "480px",
-      sm: "768px",
-      md: "1060px",
+      screens: {
+        xs: "480px",
+        sm: "768px",
+        md: "1060px",
+      },
     },
   },
   plugins: [],
