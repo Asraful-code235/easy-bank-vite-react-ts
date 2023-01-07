@@ -67,8 +67,8 @@ const Navbar = ({ selectPage, setSelectedPage }: Props) => {
         )}
       </div>
       {!isAboveMediaScreens && !isMenuToggled && (
-        <div className="fixed top-20 left-0 right-0 bottom-0  z-[-1] bg-gradient-to-b from-Grayish-Blue to-Very-Light-Gray   opacity-100  ">
-          <div className=" mx-auto mt-5 w-5/6  rounded-md bg-white p-6">
+        <div className=" fixed top-20 left-0 right-0 bottom-0   bg-slate-600 bg-opacity-80   ">
+          <div className=" mx-auto mt-5 w-5/6  rounded-md bg-white p-6 ">
             <ul className="relative flex flex-col items-center justify-center gap-8">
               {["home", "about", "contact", "blog", "careers"].map(
                 (items: string) => (
